@@ -29,7 +29,7 @@ export function SearchForm({ onSearch, isSearching }: SearchFormProps) {
     { code: 'he', name: 'עברית' }
   ];
 
-  const sources = ['OpenAlex', 'CrossRef', 'DOAJ', 'EuropePMC', 'BASE'];
+  const sources = ['OpenAlex', 'CrossRef', 'DOAJ'];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

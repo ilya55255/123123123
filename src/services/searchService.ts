@@ -2,8 +2,6 @@ import { SearchParams, Document, SearchResult, APIResponse } from '../types';
 import { searchOpenAlex } from './api/openAlex';
 import { searchCrossRef } from './api/crossref';
 import { searchDOAJ } from './api/doaj';
-import { searchEuropePMC } from './api/europePmc';
-import { searchBASE } from './api/base';
 import { searchCustomUrls } from './api/urlFetcher';
 import { removeDuplicates } from '../utils/textProcessing';
 import { StorageService } from './storage';
@@ -20,9 +18,7 @@ export class SearchService {
     const sourceMap: Record<string, () => Promise<APIResponse>> = {
       'OpenAlex': () => searchOpenAlex(params),
       'CrossRef': () => searchCrossRef(params),
-      'DOAJ': () => searchDOAJ(params),
-      'EuropePMC': () => searchEuropePMC(params),
-      'BASE': () => searchBASE(params)
+      'DOAJ': () => searchDOAJ(params)
     };
 
     const sourcesToSearch = params.sources.length > 0

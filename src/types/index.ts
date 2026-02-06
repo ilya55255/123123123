@@ -44,8 +44,6 @@ export type SourceType =
   | 'OpenAlex'
   | 'CrossRef'
   | 'DOAJ'
-  | 'EuropePMC'
-  | 'BASE'
   | 'CustomURL';
 
 export interface APIResponse {

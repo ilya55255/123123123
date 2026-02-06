@@ -95,7 +95,7 @@ function App() {
             <div className="mt-8 bg-white rounded-lg shadow-md p-6">
               <h2 className="text-xl font-bold text-gray-900 mb-4">Features</h2>
               <ul className="space-y-2 text-gray-700">
-                <li>✓ Search across 5 academic databases (OpenAlex, CrossRef, DOAJ, Europe PMC, BASE)</li>
+                <li>✓ Search across 3 academic databases (OpenAlex, CrossRef, DOAJ)</li>
                 <li>✓ Multi-language support (English, Russian, Chinese, Japanese, Arabic, Hebrew, and more)</li>
                 <li>✓ Structured data output with metadata and text chunks</li>
                 <li>✓ Export to JSON, CSV, or NDJSON formats</li>

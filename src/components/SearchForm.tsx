@@ -12,7 +12,7 @@ export function SearchForm({ onSearch, isSearching }: SearchFormProps) {
   const [dateFrom, setDateFrom] = useState('2024-01-01');
   const [dateTo, setDateTo] = useState(new Date().toISOString().split('T')[0]);
   const [selectedLanguages, setSelectedLanguages] = useState<string[]>(['en', 'ru']);
-  const [selectedSources, setSelectedSources] = useState<string[]>(['OpenAlex', 'arXiv', 'CrossRef', 'SemanticScholar', 'PubMed']);
+  const [selectedSources, setSelectedSources] = useState<string[]>(['OpenAlex', 'CrossRef', 'DOAJ']);
   const [customUrls, setCustomUrls] = useState('');
   const [maxResults, setMaxResults] = useState(20);
 
@@ -29,7 +29,7 @@ export function SearchForm({ onSearch, isSearching }: SearchFormProps) {
     { code: 'he', name: 'עברית' }
   ];
 
-  const sources = ['OpenAlex', 'arXiv', 'CrossRef', 'SemanticScholar', 'PubMed', 'CORE', 'DOAJ'];
+  const sources = ['OpenAlex', 'CrossRef', 'DOAJ', 'EuropePMC', 'BASE'];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

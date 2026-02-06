@@ -42,15 +42,10 @@ export interface SearchResult {
 
 export type SourceType =
   | 'OpenAlex'
-  | 'arXiv'
   | 'CrossRef'
-  | 'PubMed'
-  | 'CORE'
   | 'DOAJ'
-  | 'SemanticScholar'
-  | 'CyberLeninka'
-  | 'OATD'
-  | 'GoogleScholar'
+  | 'EuropePMC'
+  | 'BASE'
   | 'CustomURL';
 
 export interface APIResponse {
